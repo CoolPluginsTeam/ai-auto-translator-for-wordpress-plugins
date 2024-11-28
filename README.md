@@ -1,4 +1,4 @@
-# ai-auto-translator-for-wordpress-plugin
+# ai-auto-translator-for-wordpress-plugins
 Local AI translation tool for WordPress themes &amp; plugins using Chrome's built-in Translator API.
 
 The AI Auto Translator For WordPress Plugins is an innovative tool designed to enhance the translation capabilities of WordPress plugins and themes by utilizing local AI models and the Translator API in Chrome.
