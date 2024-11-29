@@ -3,7 +3,7 @@ Local AI translation tool for WordPress themes &amp; plugins using Chrome's buil
 
 The AI Auto Translator For WordPress Plugins is an innovative tool designed to enhance the translation capabilities of WordPress plugins and themes by utilizing local AI models and the Translator API in Chrome.
 
-### 📖 Description
+## 📖 Description
 
 The AI Auto Translator for WordPress Plugins is an addon for the Loco Translate plugin that uses Chrome built-in AI to automatically translate all strings in a WordPress plugin or theme with just one click.
 
@@ -14,7 +14,7 @@ Choose their target language.
 Click the Auto Translate button to translate all strings instantly.
 The result? Translations are applied directly to your plugin or theme, saving hours of work.
 
-### 🛠️ How We Built It
+## 🛠️ How We Built It
 
 1. Choosing a Base Plugin:
     - We used the Loco Translate plugin as the base plugin to save development time since it’s widely used for WordPress plugin and theme translations.
@@ -28,7 +28,7 @@ The result? Translations are applied directly to your plugin or theme, saving ho
     - Designed the addon to handle large datasets and ensure translations are applied efficiently.
     - Focused on creating a beginner-friendly interface.
 
-### 🚀 How to use?
+## 🚀 How to use?
 
 1. Ensure that the Chrome Translator API is enabled in your browser by navigating to **chrome://flags/#translation-api**.
 2. Install the necessary language packs in your browser by visiting **chrome://on-device-translation-internals/**.
@@ -41,11 +41,11 @@ The result? Translations are applied directly to your plugin or theme, saving ho
 9. Change the site language by navigating to **Settings >> General** and selecting your desired language from the **Site Language** dropdown.
 10. Finally, visit your theme or plugin settings page to see all strings translated into your selected language.
 
-### 🧪 Try It Yourself!
+## 🧪 Try It Yourself!
 
 A plugin specially designed for WordPress developers and website owners. If you’re tired of manual translations, give our plugin a try. We’re confident you’ll love it as it saves hours of work through the power of automation with Chrome’s AI!
 
-### 📦 Installation
+## 📦 Installation
 
 1. Install **AI Auto Translator For WordPress Plugins** from the WordPress.org repository or by uploading the plugin zip file to the **/wp-content/plugins** directory.
 2. Activate the plugin through the **Plugins >> Installed Plugin** menu in WordPress.
