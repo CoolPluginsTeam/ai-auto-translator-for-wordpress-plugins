@@ -3,24 +3,30 @@ Local AI translation tool for WordPress themes &amp; plugins using Chrome's buil
 
 The AI Auto Translator For WordPress Plugins is an innovative tool designed to enhance the translation capabilities of WordPress plugins and themes by utilizing local AI models and the Translator API in Chrome.
 
-== Description ==
+### Description
 
-### AI Auto Translator For WordPress Plugins
+The AI Auto Translator for WordPress Plugins is an addon for the Loco Translate plugin that uses Chrome built-in AI to automatically translate all strings in a WordPress plugin or theme with just one click.
 
-The AI Auto Translator For WordPress Plugins provides a seamless experience for developers and website owners looking to translate their WordPress content efficiently. This plugin leverages local AI models to translate text directly in the browser, ensuring high-quality translations without the need for external paid translation services.
+Instead of manually translating each string, users can now:
 
-With this plugin, you can easily translate any WordPress plugin or theme strings into the desired language, saving time and effort for those managing multilingual websites.
+Select a plugin or theme to translate.
+Choose their target language.
+Click the Auto Translate button to translate all strings instantly.
+The result? Translations are applied directly to your plugin or theme, saving hours of work.
 
-### 🤖 No Paid API Required! + Unlimited Translations!
+### How We Built It
 
-* Enjoy unlimited translations without the need for a paid API key. Simply install the plugin and start translating with one click.
-* The plugin integrates with the Chrome Translator API, allowing for efficient and accurate translations of any translatable text strings.
+1. Choosing a Base Plugin:
+    - We used the Loco Translate plugin as the base plugin to save development time since it’s widely used for WordPress plugin and theme translations.
 
-### ⚡ Key Features
+2. Developing the Addon:
+    - We created a custom addon that integrates with Loco Translate to add an Auto Translate button.
+    - This button interacts with Chrome’s built-in AI to perform automatic translations.
 
-* One-click translation for all translatable strings, ensuring a quick and easy process.
-* Translate unlimited characters without any costs or API key requirements, with the ability to translate over 25000 characters in just 1 minute.
-* After translations, you can manually edit any translated string within Loco's built-in editor.
+3. Easy Workflow & Chrome AI Integration:
+    - Guided users through enabling the Chrome Translator Modal and installing language packs.
+    - Designed the addon to handle large datasets and ensure translations are applied efficiently.
+    - Focused on creating a beginner-friendly interface.
 
 ### 🚀 How to use?
 
@@ -34,6 +40,10 @@ With this plugin, you can easily translate any WordPress plugin or theme strings
 8. Save the language file to view the translated strings within it.
 9. Change the site language by navigating to **Settings >> General** and selecting your desired language from the **Site Language** dropdown.
 10. Finally, visit your theme or plugin settings page to see all strings translated into your selected language.
+
+### Try It Yourself!
+
+A plugin specially designed for WordPress developers and website owners. If you’re tired of manual translations, give our plugin a try. We’re confident you’ll love it as it saves hours of work through the power of automation with Chrome’s AI!
 
 ### 📦 Installation
 
