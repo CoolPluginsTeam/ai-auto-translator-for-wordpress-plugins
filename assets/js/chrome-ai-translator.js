@@ -55,17 +55,20 @@ class ChromeAiTranslator {
     static languageSupportedStatus = async (sourceLanguage, targetLanguage, targetLanguageLabel) => {
         const supportedLanguages = ['en','es', 'ja', 'ar', 'bn', 'de', 'fr', 'hi', 'it', 'ko', 'nl', 'pl', 'pt', 'ru', 'th', 'tr', 'vi', 'zh', 'zh-hant', 'bg', 'cs', 'da', 'el', 'fi', 'hr', 'hu', 'id', 'iw', 'lt', 'no', 'ro', 'sk', 'sl', 'sv', 'uk', 'en-zh'].map(lang => lang.toLowerCase());
 
+        // Browser check
+        if(!window.hasOwnProperty('chrome') || !navigator.userAgent.includes('Chrome') || navigator.userAgent.includes('Edg')){
+            const message = jQuery(`<span style="color: #ff4646; margin-top: .5rem; display: inline-block;">The Translator API, which uses local AI models, only works in the Chrome browser. For more details, <a href="https://developer.chrome.com/docs/ai/translator-api" target="_blank">click here</a>.</span>`);
+            return message;
+        }
         // Check if the translation API is available
         if (!('translation' in self && 'createTranslator' in self.translation)) {
             const message = jQuery(`<span style="color: #ff4646; margin-top: .5rem; display: inline-block;">The Translator AI modal is currently not supported or disabled in your browser. Please enable it. For detailed instructions on how to enable the Translator AI modal in your Chrome browser, <a href="https://developer.chrome.com/docs/ai/translator-api#bypass_language_restrictions_for_local_testing" target="_blank">click here</a>.</span>`);
-            jQuery("#chrome-ai-translator_settings_btn");
             return message;
         }
 
         // Check if the target language is supported
         if (!supportedLanguages.includes(targetLanguage.toLowerCase())) {
             const message = jQuery(`<span style="color: #ff4646; margin-top: .5rem; display: inline-block;">Unfortunately, the <strong>${targetLanguageLabel} (${targetLanguage})</strong> language is currently not supported by the Local Translator AI modal. Please check and read the docs which languages are currently supported by <a href="https://developer.chrome.com/docs/ai/translator-api#bypass_language_restrictions_for_local_testing" target="_blank">clicking here</a>.</span>`);
-            jQuery("#chrome-ai-translator_settings_btn");
             return message;
         }
 
@@ -79,7 +82,6 @@ class ChromeAiTranslator {
         // Handle case for language pack after download
         if (status === "after-download") {
             const message = jQuery(`<span style="color: #ff4646; margin-top: .5rem; display: inline-block;">Please install the <strong>${targetLanguageLabel} (${targetLanguage})</strong> language pack to proceed.To install the language pack, visit <strong>chrome://on-device-translation-internals</strong>. For further assistance, refer to the <a href="https://developer.chrome.com/docs/ai/translator-api#bypass_language_restrictions_for_local_testing" target="_blank">documentation</a>.</span>`);
-            jQuery("#chrome-ai-translator_settings_btn");
             return message;
         }
 
