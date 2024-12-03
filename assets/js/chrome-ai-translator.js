@@ -150,7 +150,7 @@ class ChromeAiTranslator {
 
         // Create a translator instance
         this.translator = await self.translation.createTranslator({
-            sourceLanguage: 'en',
+            sourceLanguage: this.sourceLanguage,
             targetLanguage: langCode,
         });
 
